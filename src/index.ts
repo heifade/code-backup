@@ -2,8 +2,8 @@ import { option } from "yargs";
 import chalk from "chalk";
 import { spawnSync, SpawnSyncOptionsWithStringEncoding, execSync } from "child_process";
 
-let pars = option("s", {
-  alias: "r",
+let pars = option("r", {
+  alias: "winrar",
   demand: false,
   default: `C:/"Program Files"/WinRAR/WinRAR.exe`,
   describe: "WinRAR程序的URL",
@@ -36,6 +36,8 @@ let options: SpawnSyncOptionsWithStringEncoding = {
   cwd: __dirname,
   stdio: [process.stdin, process.stdout, process.stderr]
 };
+
+console.log(1, spawnSync);
 
 let childProcess = spawnSync(`${pars.r}`, ["a", "-r", "-rv1", "-ibck", "-m5", "-or", "-agYYYYMMDDHHMMSS", `-hp${pars.p}`, ".rar", `${pars.s}`], options);
 

@@ -1,6 +1,6 @@
 {
   "name": "code-backup",
-  "version": "1.0.0-beta3",
+  "version": "1.0.0-beta4",
   "description": "code-backup",
   "main": "./es/index.js",
   "module": "./es/index.js",
@@ -30,5 +30,8 @@
     "code-backup"
   ],
   "author": "heifade",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "code-backup": "./es/bin/code-backup"
+  }
 }
