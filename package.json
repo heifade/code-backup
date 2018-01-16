@@ -1,0 +1,32 @@
+{
+  "name": "code-backup",
+  "version": "1.0.0-beta1",
+  "description": "code-backup",
+  "main": "./es/index.js",
+  "module": "./es/index.js",
+  "typings": "./es/index",
+  "files": [
+    "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heifade/code-backup.git"
+  },
+  "devDependencies": {
+    "pcreate-config": "^1.1.2",
+    "@types/node": "^9.3.0",
+    "chalk": "^2.3.0",
+    "yargs": "^10.1.1"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "pcreate build",
+    "start": "pcreate build && node ./es/index.js",
+    "test": "pcreate test"
+  },
+  "keywords": [
+    "code-backup"
+  ],
+  "author": "heifade",
+  "license": "MIT"
+}
