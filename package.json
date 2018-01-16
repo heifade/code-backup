@@ -1,6 +1,6 @@
 {
   "name": "code-backup",
-  "version": "1.0.0-beta4",
+  "version": "1.0.0-beta5",
   "description": "code-backup",
   "main": "./es/index.js",
   "module": "./es/index.js",
@@ -17,7 +17,6 @@
     "@types/node": "^9.3.0"
   },
   "dependencies": {
-    "child_process": "^1.0.2",
     "chalk": "^2.3.0",
     "yargs": "^10.1.1"
   },

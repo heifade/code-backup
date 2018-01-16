@@ -37,8 +37,10 @@ let options: SpawnSyncOptionsWithStringEncoding = {
   stdio: [process.stdin, process.stdout, process.stderr]
 };
 
-console.log(1, spawnSync);
+try {
+  let childProcess = spawnSync(`${pars.r}`, ["a", "-r", "-rv1", "-ibck", "-m5", "-or", "-agYYYYMMDDHHMMSS", `-hp${pars.p}`, ".rar", `${pars.s}`], options);
 
-let childProcess = spawnSync(`${pars.r}`, ["a", "-r", "-rv1", "-ibck", "-m5", "-or", "-agYYYYMMDDHHMMSS", `-hp${pars.p}`, ".rar", `${pars.s}`], options);
-
-console.log(childProcess);
+  console.log(childProcess);
+} catch (e) {
+  console.log("error", e);
+}
