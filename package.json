@@ -1,6 +1,6 @@
 {
   "name": "code-backup",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0-beta3",
   "description": "code-backup",
   "main": "./es/index.js",
   "module": "./es/index.js",
@@ -14,11 +14,13 @@
   },
   "devDependencies": {
     "pcreate-config": "^1.1.2",
-    "@types/node": "^9.3.0",
+    "@types/node": "^9.3.0"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
     "chalk": "^2.3.0",
     "yargs": "^10.1.1"
   },
-  "dependencies": {},
   "scripts": {
     "build": "pcreate build",
     "start": "pcreate build && node ./es/index.js",
